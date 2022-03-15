@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <main.h>
+#include "main.h"
 
 /**
  * main - A function that prints the alphabet, in lower case followed
@@ -22,4 +22,3 @@
 
 		return (0);
 }
-
