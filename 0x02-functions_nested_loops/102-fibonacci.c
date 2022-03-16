@@ -1,38 +1,37 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - Computes Sum of multiple
- * Description- A program that computes and prints the
- * sum of all the multiples of 5
+ * main - A prints the first 50 Fibonacci numbers,
+ * starting with 1 and 2, followed by a new line.
+ *
+ *
  * Return: Always 0 Success
+ *
  */
 int main(void)
 {
-	unsigned long int sum3, sum5, sum;
-	int n;
+	long int i, j, k, next;
 
-	sum3 = 0;
-	sum5 = 0;
-	sum = 0;
+	j = 1;
 
-	for (n = 0; n < 1024; n++)
+	k = 2;
+
+	for (i = 1; i <= 50; ++i)
 	{
-		if ((n % 3) == 0)
-		{
-			sum3 = sum3 + n;
-		}
-		else if ((n % 5) == 0)
+		if (j != 20365011074)
 
 		{
-
-			sum5 = sum5 + n;
+			printf("%ld, ", j);
+		} else
+		{
+			printf("%ld\n", j);
 		}
-
+		next = j + k;
+		j = k;
+		k = next;
 	}
 
-
-	sum = sum3 + sum5;
-	printf("%lu\n", sum);
 	return (0);
+
 }
 
