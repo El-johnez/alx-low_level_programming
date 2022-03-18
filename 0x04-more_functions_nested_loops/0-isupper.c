@@ -1,24 +1,12 @@
 #include "main.h"
 
 /**
- * main - Entry point
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * _isupper - checks for uppercase character
+ * Return: 0 and 1
+ * @c: the character to be checked
  */
-int main(void)
+int _isupper(int c)
 {
-	char c[] = "_putchar";
-	int i = 0;
-
-	while (i < 8)
-	{
-		_putchar(c[i]);
-		i++;
-
-	}
-	_putchar('\n');
-	return (0);
-
+	return (c >= 'A' && c <= 'Z');
 }
 
